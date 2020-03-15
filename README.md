@@ -19,7 +19,7 @@ The star schema has 1 *fact* table (songplays), and 4 *dimension* tables (artist
 
 ### Project structure explanation
 
-'''
+"""
 README.md        # Project description
 
 data             # The dataset
@@ -37,4 +37,4 @@ scripts:
 create_tables.py # Schema creation script
 etl.py           # ETL script
 sql_queries.py   # Definition of all sql queries
-'''
+"""
