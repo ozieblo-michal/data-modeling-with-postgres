@@ -8,7 +8,7 @@ Udacity Data Engineer Nanodegree project
 
 The star schema has 1 *fact* table (songplays), and 4 *dimension* tables (artists, songs,  time, users).
 
-![](star_schema.png)
+![](schema.png)
 
 `DROP`, `CREATE`, `INSERT`, and `SELECT` queries are defined in **sql_queries.py**. **create_tables.py** uses functions `create_database`, `drop_tables`, and `create_tables` to create the database sparkifydb and the required tables.
 
