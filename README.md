@@ -8,7 +8,7 @@ Udacity Data Engineer Nanodegree project
 
 The star schema has 1 fact table (songplays), and 4 dimension tables (artists, songs,  time, users).
 
-![](schema.png)
+![](starschema.png)
 
 `DROP`, `CREATE`, `INSERT`, and `SELECT` queries are set in **sql_queries.py**. 
 
