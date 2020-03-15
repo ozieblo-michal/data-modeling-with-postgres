@@ -8,11 +8,11 @@ time_table_drop = "DROP TABLE IF EXISTS time;"
 
 # CREATE TABLES
 
-songplay_table_create = "CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, start_time TIMESTAMP, user_id INT, level VARCHAR, song_id VARCHAR, artist_id VARCHAR, session_id VARCHAR, location VARCHAR, user_agent VARCHAR);"
-user_table_create = "CREATE TABLE IF NOT EXISTS users (user_id VARCHAR PRIMARY KEY NOT NULL, first_name VARCHAR, last_name VARCHAR, gender VARCHAR, level VARCHAR);"
-song_table_create = "CREATE TABLE IF NOT EXISTS songs (song_id VARCHAR PRIMARY KEY NOT NULL, title VARCHAR, artist_id VARCHAR NOT NULL, year VARCHAR, duration NUMERIC);"
-artist_table_create = "CREATE TABLE IF NOT EXISTS artists (artist_id VARCHAR PRIMARY KEY NOT NULL, name VARCHAR, location VARCHAR, latitude VARCHAR, longitude VARCHAR);"
-time_table_create = "CREATE TABLE IF NOT EXISTS time (start_time TIMESTAMP PRIMARY KEY NOT NULL, hour INT, day INT, week INT, month INT, year INT, weekday TEXT);"
+songplay_table_create = "CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, start_time TIMESTAMP NOT NULL, user_id INT NOT NULL, level VARCHAR, song_id VARCHAR, artist_id VARCHAR, session_id VARCHAR, location VARCHAR, user_agent VARCHAR);"
+user_table_create = "CREATE TABLE IF NOT EXISTS users (user_id VARCHAR PRIMARY KEY, first_name VARCHAR, last_name VARCHAR, gender VARCHAR, level VARCHAR);"
+song_table_create = "CREATE TABLE IF NOT EXISTS songs (song_id VARCHAR PRIMARY KEY, title VARCHAR, artist_id VARCHAR, year VARCHAR, duration NUMERIC);"
+artist_table_create = "CREATE TABLE IF NOT EXISTS artists (artist_id VARCHAR PRIMARY KEY, name VARCHAR, location VARCHAR, latitude VARCHAR, longitude VARCHAR);"
+time_table_create = "CREATE TABLE IF NOT EXISTS time (start_time TIMESTAMP PRIMARY KEY, hour INT, day INT, week INT, month INT, year INT, weekday TEXT);"
 
 # INSERT RECORDS
 
